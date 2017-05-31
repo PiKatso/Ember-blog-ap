@@ -1,5 +1,5 @@
 <div class="post">
-  <h3>{{post.title}}</h3>
+  {{#link-to 'post' post.id}}<h3>{{post.title}}</h3>{{/link-to}}
   <p>{{post.content}}</p>
   <img src={{post.image}}/>
 </div>
