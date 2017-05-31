@@ -27,11 +27,18 @@ h1 {
 }
 
 .post-image {
+  display: block;
   width: 500px;
-  border-radius: 25px;
-  padding-bottom: 20px;
+  height: 500px;
+  background-repeat: no-repeat;
+  border-radius: 15%;
+  margin: 10px auto 30px auto;
 }
 
-link:hover {
+a {
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: none;
 }
