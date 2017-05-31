@@ -1,11 +1,12 @@
-<div class="index-page">
-</div>
-<div class="posts">
-  {{#each model as |post|}}
-    {{post-tile post=post}}
-    <hr>
-  {{/each}}
-</div>
-<div class="newPost">
-  {{new-post savePost="savePost"}}
+<div class="post-block">
+  <div class="posts">
+
+    {{#each model as |post|}}
+      {{post-tile post=post}}
+    {{/each}}
+
+  </div>
+  <div class="newPost">
+    {{new-post savePost="savePost"}}
+  </div>
 </div>

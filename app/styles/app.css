@@ -1,0 +1,37 @@
+body {
+  margin: 0px;
+}
+
+#header {
+  background-color: #dd6a58;
+  text-align: center;
+  width: 100%;
+  padding: 25px 0;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.post-block {
+  text-align: center;
+  margin: 0px 7%;
+}
+
+.post {
+  border-bottom: 3px dotted #dd6a58;
+  padding: 30px;
+  margin: 25px;
+}
+
+.post-image {
+  width: 500px;
+  border-radius: 25px;
+  padding-bottom: 20px;
+}
+
+link:hover {
+  text-decoration: none;
+}
