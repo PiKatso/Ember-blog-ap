@@ -2,6 +2,6 @@
 <p>{{model.content}}</p>
 <img src="{{model.image}}"/>
 
-<button {{action 'delete' model}}>Delete</button>
+{{post-update post=model update="update"}}
 
-<!-- <button {{action 'update' model}}>Update</button> -->
+<button {{action 'delete' model}}>Delete</button>
