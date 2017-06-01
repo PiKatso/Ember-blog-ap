@@ -21,7 +21,7 @@ h1 {
 }
 
 .post {
-  border-bottom: 3px dotted #dd6a58;
+  /*border-bottom: 3px dotted #dd6a58;*/
   padding: 30px;
   margin: 25px;
 }
@@ -37,8 +37,32 @@ h1 {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
   text-decoration: none;
+  color: #dd6a58;
+}
+
+.post-display {
+  text-align: center;
+
+}
+
+h2 , h3 {
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+
+button {
+  background-color: white;
+  border-color: #dd6a58;
+  color: #dd6a58;
+  margin: 5px;
+}
+
+.post-comments {
+  margin: 5px;
+  background-color: #efefef;
 }

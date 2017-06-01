@@ -10,8 +10,7 @@
     {{#each model.comments as |comment|}}
       <p><em>{{comment.content}}</em> - {{comment.author}}</p>
     {{/each}}
+      {{new-comment saveComment="saveComment" post=model}}
+
   </div>
-
-  {{new-comment saveComment="saveComment" post=model}}
-
 </div>
