@@ -5,6 +5,9 @@ export default Ember.Route.extend({
     return this.store.findRecord('post', params.post_id);
   },
   actions: {
+    debuggg(data){
+      debugger;
+    },
     delete(post) {
       post.destroyRecord();
       this.transitionTo('index');
@@ -17,6 +20,16 @@ export default Ember.Route.extend({
       });
       post.save();
       this.transitionTo('index');
+    },
+    saveComment(params){
+      var newComment = this.store.createRecord('comment', params);
+      debugger;
+      var post = params.post;
+      post.get('comments').addObject(newComment);
+      newComment.save().then(function(){
+        return post.save();
+      });
+      this.transitionTo('post', post);
     }
   }
 });
