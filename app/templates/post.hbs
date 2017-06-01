@@ -1,14 +1,17 @@
-<h2>{{model.title}}</h2>
-<p>{{model.content}}</p>
-<img src="{{model.image}}"/>
-{{post-update post=model update="update"}}
+<div class="post-display">
+  <h2>{{model.title}}</h2>
+  <p>{{model.content}}</p>
+  <img class="post-image" src="{{model.image}}"/>
+  {{post-update post=model update="update"}}
 
-<button {{action 'delete' model}}>Delete</button>
+  <button {{action 'delete' model}}>Delete</button>
 
-{{new-comment saveComment="saveComment" post=model}}
+  <div class="post-comments">
+    {{#each model.comments as |comment|}}
+      <p><em>{{comment.content}}</em> - {{comment.author}}</p>
+    {{/each}}
+  </div>
 
-<ul>
-  {{#each model.comments as |comment|}}
-    <li>{{comment.content}} - {{comment.author}}</li>
-  {{/each}}
-</ul>
+  {{new-comment saveComment="saveComment" post=model}}
+
+</div>
