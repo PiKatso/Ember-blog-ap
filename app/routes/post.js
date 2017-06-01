@@ -5,9 +5,6 @@ export default Ember.Route.extend({
     return this.store.findRecord('post', params.post_id);
   },
   actions: {
-    debuggg(data){
-      debugger;
-    },
     delete(post) {
       post.destroyRecord();
       this.transitionTo('index');
